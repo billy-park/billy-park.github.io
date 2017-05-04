@@ -1,2 +1,2 @@
 # billy-park.github.io
-My portfolio
+Portfolio site to host my web work
