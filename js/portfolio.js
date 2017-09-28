@@ -7,8 +7,6 @@ $(document).ready(function() {
   navbarLine = $('#landing').offset().top + 158;
   $(window).resize(function(){
     navbarLine = $('#landing').offset().top + 158;
-    console.log('resize!');
-    console.log(navbarLine);
   });
   $('#navbar').addClass("navbarDefault");
   if ($(window).scrollTop() > navbarLine) {

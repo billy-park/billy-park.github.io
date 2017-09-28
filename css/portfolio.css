@@ -154,7 +154,6 @@ h1
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 100%;
 }
 
 #aboutContainer
@@ -174,6 +173,8 @@ h1
 #aboutContainer p
 {
   text-align: left;
+  margin-right: 10px;
+  word-wrap: break-word;
 }
 
 #aboutTitle
@@ -201,7 +202,8 @@ h1
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-
+  display: flex;
+  flex-direction: column;
 }
 
 #portfolioTitle
@@ -246,7 +248,7 @@ h1
   position: relative;
   display: inline-block;
   border: 2px white solid;
-  margin-left: 10px !important;
+  margin-left: 10px;
 }
 
 .projectAlt
@@ -255,7 +257,7 @@ h1
 }
 .projectDescAlt
 {
-  margin-left: 10px !important;
+  margin-left: 10px;
 }
 
 .projectLink
@@ -318,6 +320,8 @@ h1
 {
   max-width: 600px;
   text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .projectDescription h4
@@ -332,6 +336,11 @@ h1
   text-align: center;
 }
 */
+
+.hidden {
+  display: none;
+}
+
 #contactWrapper
 {
   color: #4286f4;
@@ -351,16 +360,6 @@ h1
 #contactTitle
 {
   text-align: center;
-}
-
-.form
-{
-  color: white;
-  font-size: 18px;
-}
-
-#contactNumber
-{
 }
 
 .contactSubHead
@@ -395,7 +394,7 @@ textarea {
 
 .otherLinks
 {
-  margin-top: 40px;
+  margin-top: 20px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -404,10 +403,10 @@ textarea {
 
 .otherLinks img
 {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   margin-left: 20px;
-  margin-rightL: 20px;
+  margin-right: 20px;
 }
 
 ::-webkit-input-placeholder
@@ -464,5 +463,57 @@ textarea {
   {
     max-width: 400px;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .aboutImage
+  {
+    display: none;
+  }
+  #aboutWrapper
+  {
+    padding-right: 50px;
+  }
+  #aboutContainer
+  {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .hidden {
+    display: unset;
+  }
+  #aboutContainer p
+  {
+    margin: 0 auto;
+    text-align: center;
+    
+  }
+  #aboutContainer .columns
+  {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .projectRow {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .projectImageContainer {
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .projectDescription {
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .projectImageTitleDesc {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    position: relative;
+    font-size: 20px;
+    color: white;
   }
 }
