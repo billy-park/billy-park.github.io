@@ -136,6 +136,12 @@ h1
   font-weight: bold;
 }
 
+.aboutImage
+{
+  height: 300px;
+  width: 300px;
+}
+
 #aboutWrapper
 {
   background-color: white;
@@ -175,6 +181,10 @@ h1
   text-align: left;
   margin-right: 10px;
   word-wrap: break-word;
+}
+
+.myDesc {
+  font-size: 1.8rem;
 }
 
 #aboutTitle
@@ -489,7 +499,7 @@ textarea {
   {
     margin: 0 auto;
     text-align: center;
-    
+
   }
   #aboutContainer .columns
   {
@@ -515,7 +525,6 @@ textarea {
     margin-top: 20px;
     margin-bottom: 5px;
     position: relative;
-    font-size: 20px;
     color: white;
   }
 }
